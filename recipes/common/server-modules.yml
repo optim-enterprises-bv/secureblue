@@ -16,8 +16,6 @@ modules:
         - usbguard
         - firewalld
         - policycoreutils-python-utils
-      remove:
-        - sudo
         
     - type: files
       files:
@@ -30,6 +28,3 @@ modules:
       scripts:
         - excludepcsc.sh
         - setserverdefaultzone.sh
-        - setservermotd.sh
-        - removebrewjust.sh
-        - removesuid.sh
